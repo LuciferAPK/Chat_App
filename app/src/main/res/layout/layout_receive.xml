@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receive_background"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/txt_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhận tin nhắn"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

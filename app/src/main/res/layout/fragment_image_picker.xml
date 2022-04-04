@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/bottonSheetContainer"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_base_remove"
+                android:layout_gravity="center|top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Chọn ảnh từ"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ECECEC" />
+
+            <LinearLayout
+                android:id="@+id/chooseCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_button_imgpicker"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_camera" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Camera"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseLibrary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_button_imgpicker"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_library_photos" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Thư viện"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
